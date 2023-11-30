@@ -1,0 +1,2 @@
+do show ip int brief
+do show run | include hostname
