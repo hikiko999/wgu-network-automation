@@ -1,0 +1,14 @@
+LOG TIME ACCORDING TO UTC
+============================
+
+-------------------------------------------------------------------------------
+Name            VID  Description                                                
+-------------------------------------------------------------------------------
+ACCT_VLAN       15   ACCT VLAN 15 FOR ACCOUNTING NETWORK                       
+Default         1                                                              
+Mgmt            4095 Management VLAN                                           
+-------------------------------------------------------------------------------
+
+> Indicates description string truncated past 57 characters
+
+Total number of VLAN(s) : 3

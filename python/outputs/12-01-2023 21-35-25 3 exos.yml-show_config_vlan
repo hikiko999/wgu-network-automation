@@ -1,0 +1,7 @@
+LOG TIME ACCORDING TO UTC
+============================
+disable cli paging
+
+* EXOS-VM.3 # show config vlan
+
+#

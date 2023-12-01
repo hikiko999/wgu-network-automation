@@ -1,0 +1,14 @@
+LOG TIME ACCORDING TO UTC
+============================
+
+-------------------------------------------------------------------------------
+Name            VID  Description                                                
+-------------------------------------------------------------------------------
+Default         1                                                              
+IT_VLAN         5    IT VLAN 5 FOR IT NETWORK                                  
+Mgmt            4095 Management VLAN                                           
+-------------------------------------------------------------------------------
+
+> Indicates description string truncated past 57 characters
+
+Total number of VLAN(s) : 3

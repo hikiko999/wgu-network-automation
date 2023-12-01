@@ -1,0 +1,14 @@
+LOG TIME ACCORDING TO UTC
+============================
+
+-------------------------------------------------------------------------------
+Name            VID  Description                                                
+-------------------------------------------------------------------------------
+Default         1                                                              
+Mgmt            4095 Management VLAN                                           
+USER_VLAN       20   USER VLAN 20 FOR USER NETWORK                             
+-------------------------------------------------------------------------------
+
+> Indicates description string truncated past 57 characters
+
+Total number of VLAN(s) : 3

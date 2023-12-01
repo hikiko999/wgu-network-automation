@@ -1,1 +1,2 @@
-show configuration | include vlan
+disable cli paging
+show config vlan

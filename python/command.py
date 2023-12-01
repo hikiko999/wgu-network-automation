@@ -19,7 +19,7 @@ command_file = f"./commands/{sys.argv[2]}"
 def connect(host,username,password,device_type,seq):
     
         client = ConnectHandler(host=host, username=username, password=password, device_type=device_type)
-        output = client.send_config_from_file(command_file,read_timeout=30)
+        output = client.send_config_from_file(command_file,read_timeout=90)
         print(output)
         with open(f"./outputs/{dt_string} {seq} {sys.argv[1]}-{sys.argv[2]}", "w") as f:
             f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{output}")
