@@ -1,0 +1,23 @@
+---
+devices:
+  IT_Network_switch:
+    host: "10.10.1.5"
+    username: "admin"
+    password: ""
+    device_type: "extreme_exos"
+  MGMT_Network_switch:
+    host: "10.10.1.6"
+    username: "admin"
+    password: ""
+    device_type: "extreme_exos"
+  ACCT_Network_switch:
+    host: "10.10.1.7"
+    username: "admin"
+    password: ""
+    device_type: "extreme_exos"
+  User_Network_switch:
+    host: "10.10.1.8"
+    username: "admin"
+    password: ""
+    device_type: "extreme_exos"
+
