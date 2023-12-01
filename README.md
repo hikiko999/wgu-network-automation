@@ -1,3 +1,6 @@
+ Friday, December 1, 2023 @ 04:41:09 PM
+ - I split up the repositories for WGU and .gitignored the legacy files
+ - Originally from this GitHub https://github.com/hikiko999/wgu-network-automation
  Friday, December 1, 2023 @ 12:19:39 PM
  - I added Jinja2 templating for configuration functionality
  ---
