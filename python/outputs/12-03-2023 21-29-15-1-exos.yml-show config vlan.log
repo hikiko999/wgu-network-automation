@@ -1,0 +1,10 @@
+LOG TIME ACCORDING TO UTC
+============================
+
+#
+# Module vlan configuration.
+#
+create vlan "IT_VLAN"
+configure vlan IT_VLAN description "IT VLAN 5 FOR IT NETWORK" 
+configure vlan IT_VLAN tag 5
+configure vlan Mgmt ipaddress 10.10.1.5 255.255.255.0

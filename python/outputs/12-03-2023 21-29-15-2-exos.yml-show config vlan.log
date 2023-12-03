@@ -1,0 +1,10 @@
+LOG TIME ACCORDING TO UTC
+============================
+
+#
+# Module vlan configuration.
+#
+create vlan "MGMT_VLAN"
+configure vlan MGMT_VLAN description "MGMT VLAN 10 FOR MANAGEMENT NETWORK" 
+configure vlan MGMT_VLAN tag 10
+configure vlan Mgmt ipaddress 10.10.1.6 255.255.255.0

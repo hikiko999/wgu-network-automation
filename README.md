@@ -1,3 +1,9 @@
+Sunday, December 3, 2023 @ 05:29:15 PM
+- Splitted commands from file and straight command to fix show configuration commands
+- Error logs now display full error messages
+- Added .log to end of files
+- Added host to name of log file
+---
 Sunday, December 3, 2023 @ 01:01:15 AM
 - Polished up the log file names
 ---

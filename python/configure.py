@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader
 import sys
 import yaml
 
-# how-to: python3 script "inventory_file" "config_file"
+# how-to: python3 script "inventory_file" "config_file" "no/log"
 
 inventory_file = sys.argv[1]
 with open(f"./inventory/{inventory_file}","r") as f:
@@ -28,14 +28,16 @@ def connect(host,username,password,device_type,config,seq):
 
         output = client.send_config_set(config_contents,read_timeout=30)
         print(output)
-        with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}.log", "w") as f:
-            f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{output}")
+        if sys.argv[3] == "log":
+            with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}.log", "w") as f:
+                f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{output}")
         print(f"Ending connection to {host}\n")
     
 def looper(inventory):
-    seq = 0
+    seq_num = 0
     for i in inventory["devices"]:
-        seq+=1
+        seq_num += 1
+        seq = f"{inventory['devices'][i]['host']}({seq_num})"
         try:
             print(f"Connecting to {i}|{inventory['devices'][i]['host']}")
             connect(inventory["devices"][i]["host"],
@@ -45,23 +47,26 @@ def looper(inventory):
                     inventory['devices'][i]['configuration'],
                     seq
             )
-        except AuthenticationException:
-            failure_str = f"Authentication Failure: {inventory['devices'][i]['host']}"
+        except AuthenticationException as e:
+            failure_str = f"Authentication Failure: {inventory['devices'][i]['host']}\n\n{e}"
             print(failure_str)
-            with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-AuthenticationException.log", "w") as f:
-                f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
+            if sys.argv[3] == "log":
+                with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-AuthenticationException.log", "w") as f:
+                    f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
             continue
-        except NetmikoTimeoutException:
-            failure_str = f"Timeout Failure: {inventory['devices'][i]['host']}"
+        except NetmikoTimeoutException as e:
+            failure_str = f"Timeout Failure: {inventory['devices'][i]['host']}\n\n{e}"
             print(failure_str)
-            with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-NetmikoTimeoutException.log", "w") as f:
-                f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
+            if sys.argv[3] == "log":
+                with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-NetmikoTimeoutException.log", "w") as f:
+                    f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
             continue
-        except SSHException:
-            failure_str =f"SSH Failure: {inventory['devices'][i]['host']}"
+        except SSHException as e:
+            failure_str =f"SSH Failure: {inventory['devices'][i]['host']}\n\n{e}"
             print(failure_str)
-            with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-SSHException.log", "w") as f:
-                f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
+            if sys.argv[3] == "log":
+                with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-SSHException.log", "w") as f:
+                    f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
             continue
             
 if __name__ == '__main__':

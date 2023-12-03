@@ -1,0 +1,14 @@
+LOG TIME ACCORDING TO UTC
+============================
+
+#
+# Module vlan configuration.
+#
+configure vlan default delete ports all
+configure vr VR-Default delete ports 1-12
+configure vr VR-Default add ports 1-12
+create vlan "USER_VLAN"
+configure vlan USER_VLAN description "USER VLAN 20 FOR USER NETWORK" 
+configure vlan USER_VLAN tag 20
+configure vlan Default add ports 1-12 untagged  
+configure vlan Mgmt ipaddress 10.10.1.8 255.255.255.0

@@ -1,0 +1,10 @@
+LOG TIME ACCORDING TO UTC
+============================
+
+#
+# Module vlan configuration.
+#
+create vlan "ACCT_VLAN"
+configure vlan ACCT_VLAN description "ACCT VLAN 15 FOR ACCOUNTING NETWORK" 
+configure vlan ACCT_VLAN tag 15
+configure vlan Mgmt ipaddress 10.10.1.7 255.255.255.0
