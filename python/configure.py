@@ -28,7 +28,7 @@ def connect(host,username,password,device_type,config,seq):
 
         output = client.send_config_set(config_contents,read_timeout=30)
         print(output)
-        with open(f"./outputs/{dt_string} {seq} {sys.argv[1]}-{sys.argv[2]}", "w") as f:
+        with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}.log", "w") as f:
             f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{output}")
         print(f"Ending connection to {host}\n")
     
@@ -48,21 +48,21 @@ def looper(inventory):
         except AuthenticationException:
             failure_str = f"Authentication Failure: {inventory['devices'][i]['host']}"
             print(failure_str)
-            with open(f"./outputs/{dt_string} {seq} {sys.argv[1]}-{sys.argv[2]} FAILED AuthenticationException", "w") as f:
+            with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-AuthenticationException.log", "w") as f:
                 f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
             continue
         except NetmikoTimeoutException:
             failure_str = f"Timeout Failure: {inventory['devices'][i]['host']}"
             print(failure_str)
-            with open(f"./outputs/{dt_string} {seq}  {sys.argv[1]}-{sys.argv[2]} FAILED NetmikoTimeoutException", "w") as f:
+            with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-NetmikoTimeoutException.log", "w") as f:
                 f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
             continue
         except SSHException:
             failure_str =f"SSH Failure: {inventory['devices'][i]['host']}"
             print(failure_str)
-            with open(f"./outputs/{dt_string} {seq}  {sys.argv[1]}-{sys.argv[2]} FAILED SSHException", "w") as f:
+            with open(f"./outputs/{dt_string}-{seq}-{sys.argv[1]}-{sys.argv[2]}-FAILED-SSHException.log", "w") as f:
                 f.write(f"LOG TIME ACCORDING TO UTC\n============================\n{failure_str}")
             continue
-
+            
 if __name__ == '__main__':
     looper(inventory_contents)

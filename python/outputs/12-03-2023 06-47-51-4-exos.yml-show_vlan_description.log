@@ -1,0 +1,16 @@
+LOG TIME ACCORDING TO UTC
+============================
+show vlan description
+
+-------------------------------------------------------------------------------
+Name            VID  Description                                                
+-------------------------------------------------------------------------------
+Default         1                                                              
+Mgmt            4095 Management VLAN                                           
+USER_VLAN       20   USER VLAN 20 FOR USER NETWORK                             
+-------------------------------------------------------------------------------
+
+> Indicates description string truncated past 57 characters
+
+Total number of VLAN(s) : 3
+EXOS-VM.3 # 
