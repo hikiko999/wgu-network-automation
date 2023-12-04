@@ -1,0 +1,1 @@
+> I created this snapshot folder because I originally thought we were supposed to get a snapshot or current configuration that aligned with the tabs. There are outputs in the assets folder that can be merged with the python script to create one "inventory" file.

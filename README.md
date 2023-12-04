@@ -1,3 +1,6 @@
+Monday, December 4, 2023 @ 01:58:10 AM
+- Inventory file modified to align with submission requirements
+---
 Sunday, December 3, 2023 @ 09:21:15 PM
 - Added commands-file-v2.py -> it loops the send commands timing instead of using send config from file
 - Added a merge script for inventory
