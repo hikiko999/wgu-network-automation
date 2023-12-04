@@ -1,0 +1,1112 @@
+12-04-2023 01-57-10-IT_Network_switch(1)-exos.yml-show_system.log
+LOG TIME ACCORDING TO UTC
+============================
+show system
+
+show switch
+SysName:          EXOS-VM
+SysLocation:      
+SysContact:       https://www.extremenetworks.com/support/
+System MAC:       0C:1C:B2:85:00:00
+System Type:      EXOS-VM
+
+SysHealth check:  Enabled
+Recovery Mode:    All
+System Watchdog:  Enabled
+
+Current Time:     Mon Dec  4 01:57:13 2023
+Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
+Boot Time:        Sun Dec  3 19:10:42 2023
+Boot Count:       0
+Next Reboot:      None scheduled
+System UpTime:    6 hours 46 minutes 31 seconds
+
+Current State:    OPERATIONAL             
+Image Selected:   primary                 
+Image Booted:     primary                 
+Primary ver:      31.1.1.3                
+                  patch1-1
+Secondary ver:    31.1.1.3    
+                  patch1-1
+
+Config Selected:  primary.cfg                                          
+Config Booted:    primary.cfg                                          
+Config Automatic: NONE (Disabled)
+
+primary.cfg       Created by ExtremeXOS version 31.1.1.3
+                  211783 bytes saved on Sun Dec  3 06:05:46 2023
+
+
+LAA MAC:          Locally Administered MAC Address Disabled
+
+show version
+Switch          : PN:1N2039    SN:123456   Rev 01 BootROM: 1.2        IMG: 31.1.1.3  
+PSUCTRL-1       : PN:MEAD      SN:MD1      Rev 01 BootROM: 2.1       
+PSUCTRL-2       : PN:MEAD      SN:MD2      Rev 11 BootROM: 2.3       
+mouse-usb       : PN:MOUSE     SN:4321     Rev 11 BootROM: 4.3       
+floppy-A        :
+PSU-1       : Internal PSU-2 PN:1N2039 SN:12345
+PSU-2       : Internal PSU-3 PN:1N2039 SN:12345
+
+Image   : ExtremeXOS version 31.1.1.3 31.1.1.3-patch1-1 by release-manager
+          on Sat Nov 14 00:29:19 EST 2020
+BootROM : 1.2
+Certified Version : EXOS Linux 4.14.170, Extreme Networks FIPS Object Module 2.0.16
+
+Build Tools Version : exos-x86_64-sdk-3.0.3.1.0
+
+show temperature
+Field Replaceable Units                                  Temp (C)   Status   Min  Normal   Max
+-------------------------------------------------------  ---------  -------  ---  -------  ---
+Switch                : PCSimStack                         20.10    Normal   -10    0-40  50
+PSUCTRL-1             :                                    25.00    Normal   -10    0-40  50
+PSUCTRL-2             :                                    26.00    Normal   -10    0-40  50
+mouse-usb             :                                    27.00    Normal   -10    0-40  50
+floppy-A              : 
+
+show power
+PowerSupply 1 information:
+ State             : Powered On
+ PartInfo          : Internal PSU-2 SN:12345 PN:1N2039
+ Odometer          : 6 hours 31 minutes 40 seconds since Dec-03-2023
+ Temperature       : 30.1 deg C
+ Input             : 120.00 V AC
+, 50.00 A
+ Power Usage       : 600000.00 W 
+ Airflow Direction : N/A
+
+PowerSupply 2 information:
+ State             : Powered On
+ PartInfo          : Internal PSU-3 SN:12345 PN:1N2039
+ Odometer          : 6 hours 33 minutes 20 seconds since Dec-03-2023
+ Temperature       : 30.2 deg C
+ Input             : 120.00 V AC
+, 50.00 A
+ Power Usage       : 600000.00 W 
+ Airflow Direction : N/A
+
+System Power Usage : 1200000.00 W
+ Poll Interval     : 60 s
+ Change Threshold  : N/A
+ Change Action     : N/A
+
+
+show fans
+Slot-1 FanTray information:
+ State:                  Operational
+ NumFan:                 1
+ PartInfo:               SN: 1234567 PN:1N2039-1
+ Revision:               01
+ Odometer:               6 hours 30 minutes 10 seconds since Dec-03-2023
+ Temperature:            25.1 deg C
+ Fan-1:                  Operational at 10001 RPM
+
+show odometers
+                                                         Service  First Recorded
+Field Replaceable Units                                  Days     Start Date
+-------------------------------------------------------  -------  --------------
+Switch                : PCSimStack                             0  Dec-03-2023   
+PSUCTRL-1             :                                        0  Dec-03-2023   
+PSUCTRL-2             :                                        0  Dec-03-2023   
+mouse-usb             :                                        0  Jan-01-1970   
+floppy-A              : 
+* EXOS-VM.3 # show memory
+
+System Memory Information
+-------------------------
+ Total DRAM (KB): 524288
+ System     (KB): 31160
+ User       (KB): 216200
+ Free       (KB): 276928
+
+Memory Utilization Statistics
+-----------------------------
+
+ Process Name     Memory (KB)
+-----------------------------
+ aaa              2648            
+ acl              1594            
+ bfd              1199            
+ bgp              12091           
+ brm              649             
+ cfgmgr           2197            
+ cli              37979           
+ devmgr           1090            
+ dirser           612             
+ dnsAnalytics     1782            
+ dosprotect       758             
+ dot1ag           1312            
+ eaps             1297            
+ edgeAuto         807             
+ edp              1638            
+ elrp             1484            
+ elsm             774             
+ ems              4117            
+ epm              2235            
+ erps             1280            
+ esrp             1055            
+ etmon            1846            
+ exacl            0               
+ exdhcpsnoop      0               
+ exdos            0               
+ exnasnoop        0               
+ exosq            0               
+ expolicy         0               
+ exprocfs         0               
+ exsflow          0               
+ exsnoop          0               
+ exsshd           1468            
+ exvlan           0               
+ fdb              2520            
+ hal              5332            
+ hclag            779             
+ idMgr            3703            
+ ipSecurity       951             
+ iqagent          772             
+ isis             1708            
+ lacp             1425            
+ licMgr           1375            
+ lldp             2138            
+ mcmgr            2651            
+ mpls             0               
+ mrp              1646            
+ msdp             1160            
+ netDb            875             
+ netLogin         2195            
+ netTools         3130            
+ nettx            0               
+ nodealias        1714            
+ nodemgr          614             
+ ntp              1022            
+ ospf             1842            
+ ospfv3           6964            
+ otm              1031            
+ pim              2598            
+ poe              847             
+ polMgr           592             
+ policy           14953           
+ pwmib            553             
+ rip              1332            
+ ripng            883             
+ rtmgr            3298            
+ snmpMaster       3970            
+ snmpSubagent     7260            
+ stp              2099            
+ techSupport      925             
+ telnetd          760             
+ tftpd            405             
+ throw            9567            
+ thttpd           16411           
+ twamp            581             
+ upm              717             
+ vlan             2881            
+ vmt              1824            
+ vpex             2259            
+ vrrp             1082            
+ vsm              1663            
+ xmlc             1277            
+ xmld             5071            
+* EXOS-VM.3 # show switch management
+
+CLI idle timeout                 : Enabled (20 minutes)
+CLI max number of login attempts : 3
+CLI max number of sessions       : 8
+CLI paging                       : Disabled (this session only)
+CLI space-completion             : Disabled (this session only)
+CLI configuration logging        : Disabled (without expansion)
+CLI journal size                 : 100
+CLI password prompting only      : Disabled
+CLI display moved-keywords       : Hidden
+CLI moved-keywords hidden release: 31.1
+CLI RADIUS cmd authorize tokens  : 2
+CLI scripting                    : Disabled (this session only)
+CLI scripting error mode         : Ignore-Error (this session only)
+CLI persistent mode              : Persistent (this session only)
+CLI prompting                    : Disabled (this session only)
+CLI screen size                  : 1000 Lines 511 Columns (this session only)
+CLI refresh                      : Enabled
+CLI history expansion            : Disabled
+Image integrity checking         : Off 
+Current system port notation     : port
+Configured system port notation  : port
+Telnet access                    : Disabled (tcp port 23 vr all)
+                                 : Access Profile : not set
+SSH access                       : Enabled (Key valid, tcp port 22 vr all)
+                                 : Secure-Mode    : Off
+                                 : Access Profile : not set
+SSH2 idle time                   : 60 minutes
+SSH2 rekey interval              : 4096 MB and no time limit
+Web access                       : Enabled (tcp port 80)
+                                 : Access Profile : not set
+Total Read Only Communities	 : 0
+Total Read Write Communities	 : 0
+RMON                             : Disabled
+SNMP access                      : Enabled
+                                 : Access Profile : not set
+SNMP Notifications               : Enabled
+SNMP Notification Receivers  : None
+SNMP stats:	InPkts 2       OutPkts   0       Errors 0       AuthErrors 2
+		Gets   0       GetNexts  0       Sets   0       Drops      0       
+SNMP traps:	Sent   0       AuthTraps Enabled
+SNMP inform:	Sent   0       Retries   0       Failed 0
+* EXOS-VM.3 # show port configuration no-refresh
+
+Port Configuration
+Port     Virtual    Port  Link  Auto   Speed       Duplex   Flow  Load   Media
+         router     State State Neg  Cfg Actual  Cfg Actual Cntrl Master Pri Red
+================================================================================
+1        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+2        VR-Default E       A    ON  AUTO 100    AUTO FULL   NONE        UTP          
+3        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+4        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+5        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+6        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+7        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+8        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+9        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+10       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+11       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+12       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+================================================================================
+> indicates Port Display Name truncated past 8 characters
+Link State: A-Active, R-Ready, NP-Port Not Present, L-Loopback
+Port State: D-Disabled, E-Enabled, L-License Disabled
+Media: !-Unsupported, $-Unlicensed, #-LRM/MACsec Adapter
+Media Red: * - use "show port info detail" for redundant media type
+Flow Cntrl: Shows link partner's abilities. NONE if Auto Neg is OFF
+* EXOS-VM.3 # 
+========
+12-04-2023 01-57-10-MGMT_Network_switch(2)-exos.yml-show_system.log
+LOG TIME ACCORDING TO UTC
+============================
+show system
+
+show switch
+SysName:          EXOS-VM
+SysLocation:      
+SysContact:       https://www.extremenetworks.com/support/
+System MAC:       0C:CC:78:5D:00:00
+System Type:      EXOS-VM
+
+SysHealth check:  Enabled
+Recovery Mode:    All
+System Watchdog:  Enabled
+
+Current Time:     Mon Dec  4 01:57:52 2023
+Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
+Boot Time:        Sun Dec  3 19:10:42 2023
+Boot Count:       0
+Next Reboot:      None scheduled
+System UpTime:    6 hours 47 minutes 9 seconds
+
+Current State:    OPERATIONAL             
+Image Selected:   primary                 
+Image Booted:     primary                 
+Primary ver:      31.1.1.3                
+                  patch1-1
+Secondary ver:    31.1.1.3    
+                  patch1-1
+
+Config Selected:  primary.cfg                                          
+Config Booted:    primary.cfg                                          
+Config Automatic: NONE (Disabled)
+
+primary.cfg       Created by ExtremeXOS version 31.1.1.3
+                  211816 bytes saved on Sun Dec  3 06:05:49 2023
+
+
+LAA MAC:          Locally Administered MAC Address Disabled
+
+show version
+Switch          : PN:1N2039    SN:123456   Rev 01 BootROM: 1.2        IMG: 31.1.1.3  
+PSUCTRL-1       : PN:MEAD      SN:MD1      Rev 01 BootROM: 2.1       
+PSUCTRL-2       : PN:MEAD      SN:MD2      Rev 11 BootROM: 2.3       
+mouse-usb       : PN:MOUSE     SN:4321     Rev 11 BootROM: 4.3       
+floppy-A        :
+PSU-1       : Internal PSU-2 PN:1N2039 SN:12345
+PSU-2       : Internal PSU-3 PN:1N2039 SN:12345
+
+Image   : ExtremeXOS version 31.1.1.3 31.1.1.3-patch1-1 by release-manager
+          on Sat Nov 14 00:29:19 EST 2020
+BootROM : 1.2
+Certified Version : EXOS Linux 4.14.170, Extreme Networks FIPS Object Module 2.0.16
+
+Build Tools Version : exos-x86_64-sdk-3.0.3.1.0
+
+show temperature
+Field Replaceable Units                                  Temp (C)   Status   Min  Normal   Max
+-------------------------------------------------------  ---------  -------  ---  -------  ---
+Switch                : PCSimStack                         20.10    Normal   -10    0-40  50
+PSUCTRL-1             :                                    25.00    Normal   -10    0-40  50
+PSUCTRL-2             :                                    26.00    Normal   -10    0-40  50
+mouse-usb             :                                    27.00    Normal   -10    0-40  50
+floppy-A              : 
+
+show power
+PowerSupply 1 information:
+ State             : Powered On
+ PartInfo          : Internal PSU-2 SN:12345 PN:1N2039
+ Odometer          : 6 hours 31 minutes 40 seconds since Dec-03-2023
+ Temperature       : 30.1 deg C
+ Input             : 120.00 V AC
+, 50.00 A
+ Power Usage       : 600000.00 W 
+ Airflow Direction : N/A
+
+PowerSupply 2 information:
+ State             : Powered On
+ PartInfo          : Internal PSU-3 SN:12345 PN:1N2039
+ Odometer          : 6 hours 33 minutes 20 seconds since Dec-03-2023
+ Temperature       : 30.2 deg C
+ Input             : 120.00 V AC
+, 50.00 A
+ Power Usage       : 600000.00 W 
+ Airflow Direction : N/A
+
+System Power Usage : 1200000.00 W
+ Poll Interval     : 60 s
+ Change Threshold  : N/A
+ Change Action     : N/A
+
+
+show fans
+Slot-1 FanTray information:
+ State:                  Operational
+ NumFan:                 1
+ PartInfo:               SN: 1234567 PN:1N2039-1
+ Revision:               01
+ Odometer:               6 hours 30 minutes 10 seconds since Dec-03-2023
+ Temperature:            25.1 deg C
+ Fan-1:                  Operational at 10001 RPM
+
+show odometers
+                                                         Service  First Recorded
+Field Replaceable Units                                  Days     Start Date
+-------------------------------------------------------  -------  --------------
+Switch                : PCSimStack                             0  Dec-03-2023   
+PSUCTRL-1             :                                        0  Dec-03-2023   
+PSUCTRL-2             :                                        0  Dec-03-2023   
+mouse-usb             :                                        0  Jan-01-1970   
+floppy-A              : 
+EXOS-VM.3 # show memory
+
+System Memory Information
+-------------------------
+ Total DRAM (KB): 524288
+ System     (KB): 31160
+ User       (KB): 216356
+ Free       (KB): 276772
+
+Memory Utilization Statistics
+-----------------------------
+
+ Process Name     Memory (KB)
+-----------------------------
+ aaa              2668            
+ acl              1551            
+ bfd              1192            
+ bgp              12211           
+ brm              652             
+ cfgmgr           2197            
+ cli              37627           
+ devmgr           1067            
+ dirser           616             
+ dnsAnalytics     1751            
+ dosprotect       768             
+ dot1ag           1303            
+ eaps             1243            
+ edgeAuto         821             
+ edp              1711            
+ elrp             1491            
+ elsm             778             
+ ems              4100            
+ epm              2257            
+ erps             1248            
+ esrp             1049            
+ etmon            1572            
+ exacl            0               
+ exdhcpsnoop      0               
+ exdos            0               
+ exnasnoop        0               
+ exosq            0               
+ expolicy         0               
+ exprocfs         0               
+ exsflow          0               
+ exsnoop          0               
+ exsshd           1448            
+ exvlan           0               
+ fdb              2482            
+ hal              5371            
+ hclag            776             
+ idMgr            3707            
+ ipSecurity       959             
+ iqagent          748             
+ isis             1693            
+ lacp             1426            
+ licMgr           1422            
+ lldp             2177            
+ mcmgr            2690            
+ mpls             0               
+ mrp              1664            
+ msdp             1175            
+ netDb            872             
+ netLogin         2181            
+ netTools         3037            
+ nettx            0               
+ nodealias        1715            
+ nodemgr          614             
+ ntp              1023            
+ ospf             1785            
+ ospfv3           6905            
+ otm              998             
+ pim              2535            
+ poe              841             
+ polMgr           598             
+ policy           14911           
+ pwmib            553             
+ rip              1324            
+ ripng            885             
+ rtmgr            3274            
+ snmpMaster       3998            
+ snmpSubagent     7216            
+ stp              2128            
+ techSupport      917             
+ telnetd          762             
+ tftpd            404             
+ throw            9542            
+ thttpd           16427           
+ twamp            580             
+ upm              716             
+ vlan             2863            
+ vmt              1850            
+ vpex             2256            
+ vrrp             1122            
+ vsm              1665            
+ xmlc             1286            
+ xmld             5080            
+EXOS-VM.3 # show switch management
+
+CLI idle timeout                 : Enabled (20 minutes)
+CLI max number of login attempts : 3
+CLI max number of sessions       : 8
+CLI paging                       : Disabled (this session only)
+CLI space-completion             : Disabled (this session only)
+CLI configuration logging        : Disabled (without expansion)
+CLI journal size                 : 100
+CLI password prompting only      : Disabled
+CLI display moved-keywords       : Hidden
+CLI moved-keywords hidden release: 31.1
+CLI RADIUS cmd authorize tokens  : 2
+CLI scripting                    : Disabled (this session only)
+CLI scripting error mode         : Ignore-Error (this session only)
+CLI persistent mode              : Persistent (this session only)
+CLI prompting                    : Disabled (this session only)
+CLI screen size                  : 1000 Lines 511 Columns (this session only)
+CLI refresh                      : Enabled
+CLI history expansion            : Disabled
+Image integrity checking         : Off 
+Current system port notation     : port
+Configured system port notation  : port
+Telnet access                    : Disabled (tcp port 23 vr all)
+                                 : Access Profile : not set
+SSH access                       : Enabled (Key valid, tcp port 22 vr all)
+                                 : Secure-Mode    : Off
+                                 : Access Profile : not set
+SSH2 idle time                   : 60 minutes
+SSH2 rekey interval              : 4096 MB and no time limit
+Web access                       : Enabled (tcp port 80)
+                                 : Access Profile : not set
+Total Read Only Communities	 : 0
+Total Read Write Communities	 : 0
+RMON                             : Disabled
+SNMP access                      : Enabled
+                                 : Access Profile : not set
+SNMP Notifications               : Enabled
+SNMP Notification Receivers  : None
+SNMP stats:	InPkts 0       OutPkts   0       Errors 0       AuthErrors 0
+		Gets   0       GetNexts  0       Sets   0       Drops      0       
+SNMP traps:	Sent   0       AuthTraps Enabled
+SNMP inform:	Sent   0       Retries   0       Failed 0
+EXOS-VM.3 # show port configuration no-refresh
+
+Port Configuration
+Port     Virtual    Port  Link  Auto   Speed       Duplex   Flow  Load   Media
+         router     State State Neg  Cfg Actual  Cfg Actual Cntrl Master Pri Red
+================================================================================
+1        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+2        VR-Default E       A    ON  AUTO 100    AUTO FULL   NONE        UTP          
+3        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+4        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+5        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+6        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+7        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+8        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+9        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+10       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+11       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+12       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+================================================================================
+> indicates Port Display Name truncated past 8 characters
+Link State: A-Active, R-Ready, NP-Port Not Present, L-Loopback
+Port State: D-Disabled, E-Enabled, L-License Disabled
+Media: !-Unsupported, $-Unlicensed, #-LRM/MACsec Adapter
+Media Red: * - use "show port info detail" for redundant media type
+Flow Cntrl: Shows link partner's abilities. NONE if Auto Neg is OFF
+EXOS-VM.3 # 
+========
+12-04-2023 01-57-10-User_Network_switch(4)-exos.yml-show_system.log
+LOG TIME ACCORDING TO UTC
+============================
+show system
+
+show switch
+SysName:          EXOS-VM
+SysLocation:      
+SysContact:       https://www.extremenetworks.com/support/
+System MAC:       0C:E0:F2:0B:00:00
+System Type:      EXOS-VM
+
+SysHealth check:  Enabled
+Recovery Mode:    All
+System Watchdog:  Enabled
+
+Current Time:     Mon Dec  4 01:59:11 2023
+Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
+Boot Time:        Sun Dec  3 19:10:43 2023
+Boot Count:       0
+Next Reboot:      None scheduled
+System UpTime:    6 hours 48 minutes 28 seconds
+
+Current State:    OPERATIONAL             
+Image Selected:   primary                 
+Image Booted:     primary                 
+Primary ver:      31.1.1.3                
+                  patch1-1
+Secondary ver:    31.1.1.3    
+                  patch1-1
+
+Config Selected:  primary.cfg                                          
+Config Booted:    primary.cfg                                          
+Config Automatic: NONE (Disabled)
+
+primary.cfg       Created by ExtremeXOS version 31.1.1.3
+                  233553 bytes saved on Sun Dec  3 06:05:57 2023
+
+
+LAA MAC:          Locally Administered MAC Address Disabled
+
+show version
+Switch          : PN:1N2039    SN:123456   Rev 01 BootROM: 1.2        IMG: 31.1.1.3  
+PSUCTRL-1       : PN:MEAD      SN:MD1      Rev 01 BootROM: 2.1       
+PSUCTRL-2       : PN:MEAD      SN:MD2      Rev 11 BootROM: 2.3       
+mouse-usb       : PN:MOUSE     SN:4321     Rev 11 BootROM: 4.3       
+floppy-A        :
+PSU-1       : Internal PSU-2 PN:1N2039 SN:12345
+PSU-2       : Internal PSU-3 PN:1N2039 SN:12345
+
+Image   : ExtremeXOS version 31.1.1.3 31.1.1.3-patch1-1 by release-manager
+          on Sat Nov 14 00:29:19 EST 2020
+BootROM : 1.2
+Certified Version : EXOS Linux 4.14.170, Extreme Networks FIPS Object Module 2.0.16
+
+Build Tools Version : exos-x86_64-sdk-3.0.3.1.0
+
+show temperature
+Field Replaceable Units                                  Temp (C)   Status   Min  Normal   Max
+-------------------------------------------------------  ---------  -------  ---  -------  ---
+Switch                : PCSimStack                         20.10    Normal   -10    0-40  50
+PSUCTRL-1             :                                    25.00    Normal   -10    0-40  50
+PSUCTRL-2             :                                    26.00    Normal   -10    0-40  50
+mouse-usb             :                                    27.00    Normal   -10    0-40  50
+floppy-A              : 
+
+show power
+PowerSupply 1 information:
+ State             : Powered On
+ PartInfo          : Internal PSU-2 SN:12345 PN:1N2039
+ Odometer          : 6 hours 31 minutes 40 seconds since Dec-03-2023
+ Temperature       : 30.1 deg C
+ Input             : 120.00 V AC
+, 50.00 A
+ Power Usage       : 600000.00 W 
+ Airflow Direction : N/A
+
+PowerSupply 2 information:
+ State             : Powered On
+ PartInfo          : Internal PSU-3 SN:12345 PN:1N2039
+ Odometer          : 6 hours 33 minutes 20 seconds since Dec-03-2023
+ Temperature       : 30.2 deg C
+ Input             : 120.00 V AC
+, 50.00 A
+ Power Usage       : 600000.00 W 
+ Airflow Direction : N/A
+
+System Power Usage : 1200000.00 W
+ Poll Interval     : 60 s
+ Change Threshold  : N/A
+ Change Action     : N/A
+
+
+show fans
+Slot-1 FanTray information:
+ State:                  Operational
+ NumFan:                 1
+ PartInfo:               SN: 1234567 PN:1N2039-1
+ Revision:               01
+ Odometer:               6 hours 30 minutes 10 seconds since Dec-03-2023
+ Temperature:            25.1 deg C
+ Fan-1:                  Operational at 10001 RPM
+
+show odometers
+                                                         Service  First Recorded
+Field Replaceable Units                                  Days     Start Date
+-------------------------------------------------------  -------  --------------
+Switch                : PCSimStack                             0  Dec-03-2023   
+PSUCTRL-1             :                                        0  Dec-03-2023   
+PSUCTRL-2             :                                        0  Dec-03-2023   
+mouse-usb             :                                        0  Jan-01-1970   
+floppy-A              : 
+EXOS-VM.3 # show memory
+
+System Memory Information
+-------------------------
+ Total DRAM (KB): 524288
+ System     (KB): 31160
+ User       (KB): 216232
+ Free       (KB): 276896
+
+Memory Utilization Statistics
+-----------------------------
+
+ Process Name     Memory (KB)
+-----------------------------
+ aaa              2656            
+ acl              1540            
+ bfd              1201            
+ bgp              12166           
+ brm              647             
+ cfgmgr           2256            
+ cli              37604           
+ devmgr           1077            
+ dirser           609             
+ dnsAnalytics     1749            
+ dosprotect       761             
+ dot1ag           1317            
+ eaps             1238            
+ edgeAuto         821             
+ edp              1672            
+ elrp             1491            
+ elsm             768             
+ ems              4104            
+ epm              2232            
+ erps             1312            
+ esrp             1024            
+ etmon            1891            
+ exacl            0               
+ exdhcpsnoop      0               
+ exdos            0               
+ exnasnoop        0               
+ exosq            0               
+ expolicy         0               
+ exprocfs         0               
+ exsflow          0               
+ exsnoop          0               
+ exsshd           1447            
+ exvlan           0               
+ fdb              2493            
+ hal              5458            
+ hclag            774             
+ idMgr            3690            
+ ipSecurity       951             
+ iqagent          749             
+ isis             1722            
+ lacp             1427            
+ licMgr           1394            
+ lldp             2147            
+ mcmgr            2665            
+ mpls             0               
+ mrp              1632            
+ msdp             1178            
+ netDb            876             
+ netLogin         2168            
+ netTools         3178            
+ nettx            0               
+ nodealias        1707            
+ nodemgr          618             
+ ntp              1037            
+ ospf             1855            
+ ospfv3           6962            
+ otm              996             
+ pim              2608            
+ poe              843             
+ polMgr           594             
+ policy           14945           
+ pwmib            552             
+ rip              1345            
+ ripng            885             
+ rtmgr            3271            
+ snmpMaster       3955            
+ snmpSubagent     7253            
+ stp              2089            
+ techSupport      926             
+ telnetd          763             
+ tftpd            406             
+ throw            9592            
+ thttpd           16454           
+ twamp            595             
+ upm              709             
+ vlan             2874            
+ vmt              1820            
+ vpex             2359            
+ vrrp             1168            
+ vsm              1715            
+ xmlc             1278            
+ xmld             5025            
+EXOS-VM.3 # show switch management
+
+CLI idle timeout                 : Enabled (20 minutes)
+CLI max number of login attempts : 3
+CLI max number of sessions       : 8
+CLI paging                       : Disabled (this session only)
+CLI space-completion             : Disabled (this session only)
+CLI configuration logging        : Disabled (without expansion)
+CLI journal size                 : 100
+CLI password prompting only      : Disabled
+CLI display moved-keywords       : Hidden
+CLI moved-keywords hidden release: 31.1
+CLI RADIUS cmd authorize tokens  : 2
+CLI scripting                    : Disabled (this session only)
+CLI scripting error mode         : Ignore-Error (this session only)
+CLI persistent mode              : Persistent (this session only)
+CLI prompting                    : Disabled (this session only)
+CLI screen size                  : 1000 Lines 511 Columns (this session only)
+CLI refresh                      : Enabled
+CLI history expansion            : Disabled
+Image integrity checking         : Off 
+Current system port notation     : port
+Configured system port notation  : port
+Telnet access                    : Disabled (tcp port 23 vr all)
+                                 : Access Profile : not set
+SSH access                       : Enabled (Key valid, tcp port 22 vr all)
+                                 : Secure-Mode    : Off
+                                 : Access Profile : not set
+SSH2 idle time                   : 60 minutes
+SSH2 rekey interval              : 4096 MB and no time limit
+Web access                       : Enabled (tcp port 80)
+                                 : Access Profile : not set
+Total Read Only Communities	 : 0
+Total Read Write Communities	 : 0
+RMON                             : Disabled
+SNMP access                      : Enabled
+                                 : Access Profile : not set
+SNMP Notifications               : Enabled
+SNMP Notification Receivers  : None
+SNMP stats:	InPkts 2       OutPkts   0       Errors 0       AuthErrors 2
+		Gets   0       GetNexts  0       Sets   0       Drops      0       
+SNMP traps:	Sent   0       AuthTraps Enabled
+SNMP inform:	Sent   0       Retries   0       Failed 0
+EXOS-VM.3 # show port configuration no-refresh
+
+Port Configuration
+Port     Virtual    Port  Link  Auto   Speed       Duplex   Flow  Load   Media
+         router     State State Neg  Cfg Actual  Cfg Actual Cntrl Master Pri Red
+================================================================================
+1        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+2        VR-Default E       A    ON  AUTO 100    AUTO FULL   NONE        UTP          
+3        VR-Default E       A    ON  AUTO 100    AUTO FULL   NONE        UTP          
+4        VR-Default E       A    ON  AUTO 100    AUTO FULL   NONE        UTP          
+5        VR-Default E       A    ON  AUTO 100    AUTO FULL   NONE        UTP          
+6        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+7        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+8        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+9        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+10       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+11       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+12       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+================================================================================
+> indicates Port Display Name truncated past 8 characters
+Link State: A-Active, R-Ready, NP-Port Not Present, L-Loopback
+Port State: D-Disabled, E-Enabled, L-License Disabled
+Media: !-Unsupported, $-Unlicensed, #-LRM/MACsec Adapter
+Media Red: * - use "show port info detail" for redundant media type
+Flow Cntrl: Shows link partner's abilities. NONE if Auto Neg is OFF
+EXOS-VM.3 # 
+========
+12-04-2023 01-57-10-ACCT_Network_switch(3)-exos.yml-show_system.log
+LOG TIME ACCORDING TO UTC
+============================
+show system
+
+show switch
+SysName:          EXOS-VM
+SysLocation:      
+SysContact:       https://www.extremenetworks.com/support/
+System MAC:       0C:40:34:07:00:00
+System Type:      EXOS-VM
+
+SysHealth check:  Enabled
+Recovery Mode:    All
+System Watchdog:  Enabled
+
+Current Time:     Mon Dec  4 01:58:32 2023
+Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
+Boot Time:        Sun Dec  3 19:10:43 2023
+Boot Count:       0
+Next Reboot:      None scheduled
+System UpTime:    6 hours 47 minutes 48 seconds
+
+Current State:    OPERATIONAL             
+Image Selected:   primary                 
+Image Booted:     primary                 
+Primary ver:      31.1.1.3                
+                  patch1-1
+Secondary ver:    31.1.1.3    
+                  patch1-1
+
+Config Selected:  primary.cfg                                          
+Config Booted:    primary.cfg                                          
+Config Automatic: NONE (Disabled)
+
+primary.cfg       Created by ExtremeXOS version 31.1.1.3
+                  211816 bytes saved on Sun Dec  3 06:05:59 2023
+
+
+LAA MAC:          Locally Administered MAC Address Disabled
+
+show version
+Switch          : PN:1N2039    SN:123456   Rev 01 BootROM: 1.2        IMG: 31.1.1.3  
+PSUCTRL-1       : PN:MEAD      SN:MD1      Rev 01 BootROM: 2.1       
+PSUCTRL-2       : PN:MEAD      SN:MD2      Rev 11 BootROM: 2.3       
+mouse-usb       : PN:MOUSE     SN:4321     Rev 11 BootROM: 4.3       
+floppy-A        :
+PSU-1       : Internal PSU-2 PN:1N2039 SN:12345
+PSU-2       : Internal PSU-3 PN:1N2039 SN:12345
+
+Image   : ExtremeXOS version 31.1.1.3 31.1.1.3-patch1-1 by release-manager
+          on Sat Nov 14 00:29:19 EST 2020
+BootROM : 1.2
+Certified Version : EXOS Linux 4.14.170, Extreme Networks FIPS Object Module 2.0.16
+
+Build Tools Version : exos-x86_64-sdk-3.0.3.1.0
+
+show temperature
+Field Replaceable Units                                  Temp (C)   Status   Min  Normal   Max
+-------------------------------------------------------  ---------  -------  ---  -------  ---
+Switch                : PCSimStack                         20.10    Normal   -10    0-40  50
+PSUCTRL-1             :                                    25.00    Normal   -10    0-40  50
+PSUCTRL-2             :                                    26.00    Normal   -10    0-40  50
+mouse-usb             :                                    27.00    Normal   -10    0-40  50
+floppy-A              : 
+
+show power
+PowerSupply 1 information:
+ State             : Powered On
+ PartInfo          : Internal PSU-2 SN:12345 PN:1N2039
+ Odometer          : 6 hours 31 minutes 40 seconds since Dec-03-2023
+ Temperature       : 30.1 deg C
+ Input             : 120.00 V AC
+, 50.00 A
+ Power Usage       : 600000.00 W 
+ Airflow Direction : N/A
+
+PowerSupply 2 information:
+ State             : Powered On
+ PartInfo          : Internal PSU-3 SN:12345 PN:1N2039
+ Odometer          : 6 hours 33 minutes 20 seconds since Dec-03-2023
+ Temperature       : 30.2 deg C
+ Input             : 120.00 V AC
+, 50.00 A
+ Power Usage       : 600000.00 W 
+ Airflow Direction : N/A
+
+System Power Usage : 1200000.00 W
+ Poll Interval     : 60 s
+ Change Threshold  : N/A
+ Change Action     : N/A
+
+
+show fans
+Slot-1 FanTray information:
+ State:                  Operational
+ NumFan:                 1
+ PartInfo:               SN: 1234567 PN:1N2039-1
+ Revision:               01
+ Odometer:               6 hours 30 minutes 10 seconds since Dec-03-2023
+ Temperature:            25.1 deg C
+ Fan-1:                  Operational at 10001 RPM
+
+show odometers
+                                                         Service  First Recorded
+Field Replaceable Units                                  Days     Start Date
+-------------------------------------------------------  -------  --------------
+Switch                : PCSimStack                             0  Dec-03-2023   
+PSUCTRL-1             :                                        0  Dec-03-2023   
+PSUCTRL-2             :                                        0  Dec-03-2023   
+mouse-usb             :                                        0  Jan-01-1970   
+floppy-A              : 
+EXOS-VM.3 # show memory
+
+System Memory Information
+-------------------------
+ Total DRAM (KB): 524288
+ System     (KB): 31160
+ User       (KB): 216460
+ Free       (KB): 276668
+
+Memory Utilization Statistics
+-----------------------------
+
+ Process Name     Memory (KB)
+-----------------------------
+ aaa              2656            
+ acl              1566            
+ bfd              1197            
+ bgp              12125           
+ brm              654             
+ cfgmgr           2197            
+ cli              37562           
+ devmgr           1081            
+ dirser           611             
+ dnsAnalytics     1787            
+ dosprotect       762             
+ dot1ag           1299            
+ eaps             1302            
+ edgeAuto         835             
+ edp              1690            
+ elrp             1487            
+ elsm             789             
+ ems              4099            
+ epm              2251            
+ erps             1311            
+ esrp             1048            
+ etmon            1571            
+ exacl            0               
+ exdhcpsnoop      0               
+ exdos            0               
+ exnasnoop        0               
+ exosq            0               
+ expolicy         0               
+ exprocfs         0               
+ exsflow          0               
+ exsnoop          0               
+ exsshd           1452            
+ exvlan           0               
+ fdb              2528            
+ hal              5409            
+ hclag            776             
+ idMgr            3706            
+ ipSecurity       954             
+ iqagent          750             
+ isis             1711            
+ lacp             1414            
+ licMgr           1407            
+ lldp             2142            
+ mcmgr            2651            
+ mpls             0               
+ mrp              1659            
+ msdp             1173            
+ netDb            874             
+ netLogin         2199            
+ netTools         3154            
+ nettx            0               
+ nodealias        1724            
+ nodemgr          611             
+ ntp              1018            
+ ospf             1808            
+ ospfv3           6914            
+ otm              989             
+ pim              2538            
+ poe              843             
+ polMgr           602             
+ policy           14914           
+ pwmib            551             
+ rip              1347            
+ ripng            892             
+ rtmgr            3326            
+ snmpMaster       3912            
+ snmpSubagent     7308            
+ stp              2086            
+ techSupport      918             
+ telnetd          772             
+ tftpd            408             
+ throw            9549            
+ thttpd           16449           
+ twamp            585             
+ upm              713             
+ vlan             2884            
+ vmt              1843            
+ vpex             2361            
+ vrrp             1170            
+ vsm              1661            
+ xmlc             1257            
+ xmld             5087            
+EXOS-VM.3 # show switch management
+
+CLI idle timeout                 : Enabled (20 minutes)
+CLI max number of login attempts : 3
+CLI max number of sessions       : 8
+CLI paging                       : Disabled (this session only)
+CLI space-completion             : Disabled (this session only)
+CLI configuration logging        : Disabled (without expansion)
+CLI journal size                 : 100
+CLI password prompting only      : Disabled
+CLI display moved-keywords       : Hidden
+CLI moved-keywords hidden release: 31.1
+CLI RADIUS cmd authorize tokens  : 2
+CLI scripting                    : Disabled (this session only)
+CLI scripting error mode         : Ignore-Error (this session only)
+CLI persistent mode              : Persistent (this session only)
+CLI prompting                    : Disabled (this session only)
+CLI screen size                  : 1000 Lines 511 Columns (this session only)
+CLI refresh                      : Enabled
+CLI history expansion            : Disabled
+Image integrity checking         : Off 
+Current system port notation     : port
+Configured system port notation  : port
+Telnet access                    : Disabled (tcp port 23 vr all)
+                                 : Access Profile : not set
+SSH access                       : Enabled (Key valid, tcp port 22 vr all)
+                                 : Secure-Mode    : Off
+                                 : Access Profile : not set
+SSH2 idle time                   : 60 minutes
+SSH2 rekey interval              : 4096 MB and no time limit
+Web access                       : Enabled (tcp port 80)
+                                 : Access Profile : not set
+Total Read Only Communities	 : 0
+Total Read Write Communities	 : 0
+RMON                             : Disabled
+SNMP access                      : Enabled
+                                 : Access Profile : not set
+SNMP Notifications               : Enabled
+SNMP Notification Receivers  : None
+SNMP stats:	InPkts 2       OutPkts   0       Errors 0       AuthErrors 2
+		Gets   0       GetNexts  0       Sets   0       Drops      0       
+SNMP traps:	Sent   0       AuthTraps Enabled
+SNMP inform:	Sent   0       Retries   0       Failed 0
+EXOS-VM.3 # show port configuration no-refresh
+
+Port Configuration
+Port     Virtual    Port  Link  Auto   Speed       Duplex   Flow  Load   Media
+         router     State State Neg  Cfg Actual  Cfg Actual Cntrl Master Pri Red
+================================================================================
+1        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+2        VR-Default E       A    ON  AUTO 100    AUTO FULL   NONE        UTP          
+3        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+4        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+5        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+6        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+7        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+8        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+9        VR-Default E       R    ON  AUTO        AUTO                    UTP          
+10       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+11       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+12       VR-Default E       R    ON  AUTO        AUTO                    UTP          
+================================================================================
+> indicates Port Display Name truncated past 8 characters
+Link State: A-Active, R-Ready, NP-Port Not Present, L-Loopback
+Port State: D-Disabled, E-Enabled, L-License Disabled
+Media: !-Unsupported, $-Unlicensed, #-LRM/MACsec Adapter
+Media Red: * - use "show port info detail" for redundant media type
+Flow Cntrl: Shows link partner's abilities. NONE if Auto Neg is OFF
+EXOS-VM.3 # 
+========

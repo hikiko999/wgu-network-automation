@@ -2,6 +2,7 @@ LOG TIME ACCORDING TO UTC
 ============================
 show system
 
+
 show switch
 SysName:          EXOS-VM
 SysLocation:      
@@ -13,12 +14,12 @@ SysHealth check:  Enabled
 Recovery Mode:    All
 System Watchdog:  Enabled
 
-Current Time:     Sun Dec  3 22:07:48 2023
+Current Time:     Sun Dec  3 23:15:38 2023
 Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
 Boot Time:        Sun Dec  3 19:10:43 2023
 Boot Count:       0
 Next Reboot:      None scheduled
-System UpTime:    2 hours 57 minutes 4 seconds
+System UpTime:    4 hours 4 minutes 55 seconds
 
 Current State:    OPERATIONAL             
 Image Selected:   primary                 
@@ -68,7 +69,7 @@ show power
 PowerSupply 1 information:
  State             : Powered On
  PartInfo          : Internal PSU-2 SN:12345 PN:1N2039
- Odometer          : 2 hours 31 minutes 40 seconds since Dec-03-2023
+ Odometer          : 4 hours 1 minute 40 seconds since Dec-03-2023
  Temperature       : 30.1 deg C
  Input             : 120.00 V AC
 , 50.00 A
@@ -78,7 +79,7 @@ PowerSupply 1 information:
 PowerSupply 2 information:
  State             : Powered On
  PartInfo          : Internal PSU-3 SN:12345 PN:1N2039
- Odometer          : 2 hours 33 minutes 20 seconds since Dec-03-2023
+ Odometer          : 4 hours 3 minutes 20 seconds since Dec-03-2023
  Temperature       : 30.2 deg C
  Input             : 120.00 V AC
 , 50.00 A
@@ -97,7 +98,7 @@ Slot-1 FanTray information:
  NumFan:                 1
  PartInfo:               SN: 1234567 PN:1N2039-1
  Revision:               01
- Odometer:               2 hours 30 minutes 10 seconds since Dec-03-2023
+ Odometer:               4 hours 10 seconds since Dec-03-2023
  Temperature:            25.1 deg C
  Fan-1:                  Operational at 10001 RPM
 
@@ -112,17 +113,18 @@ mouse-usb             :                                        0  Jan-01-1970
 floppy-A              : 
 EXOS-VM.3 # show memory
 
+
 System Memory Information
 -------------------------
+show switch management
  Total DRAM (KB): 524288
  System     (KB): 31160
- User       (KB): 216144
- Free       (KB): 276984
+ User       (KB): 216580
+ Free       (KB): 276548
 
 Memory Utilization Statistics
 -----------------------------
 
-show switch management
  Process Name     Memory (KB)
 -----------------------------
  aaa              2652            
@@ -130,8 +132,8 @@ show switch management
  bfd              1197            
  bgp              12125           
  brm              654             
- cfgmgr           2173            
- cli              37318           
+ cfgmgr           2197            
+ cli              37564           
  devmgr           1073            
  dirser           611             
  dnsAnalytics     1787            
@@ -167,7 +169,7 @@ show switch management
  isis             1711            
  lacp             1414            
  licMgr           1407            
- lldp             2141            
+ lldp             2142            
  mcmgr            2651            
  mpls             0               
  mrp              1659            
@@ -194,10 +196,10 @@ show switch management
  snmpSubagent     7308            
  stp              2086            
  techSupport      918             
- telnetd          768             
+ telnetd          772             
  tftpd            408             
- throw            9550            
- thttpd           16441           
+ throw            9551            
+ thttpd           16447           
  twamp            585             
  upm              713             
  vlan             2884            
@@ -206,13 +208,14 @@ show switch management
  vrrp             1170            
  vsm              1661            
  xmlc             1257            
- xmld             5088            
+ xmld             5087            
 EXOS-VM.3 # show switch management
 
 CLI idle timeout                 : Enabled (20 minutes)
 CLI max number of login attempts : 3
 CLI max number of sessions       : 8
-CLI paging                       : Disabled (this session only)
+CLI paging                       : Disabledshow port configuration
+ (this session only)
 CLI space-completion             : Disabled (this session only)
 CLI configuration logging        : Disabled (without expansion)
 CLI journal size                 : 100
@@ -230,8 +233,7 @@ CLI history expansion            : Disabled
 Image integrity checking         : Off 
 Current system port notation     : port
 Configured system port notation  : port
-Telnet access                    : Disabledshow port configuration
- (tcp port 23 vr all)
+Telnet access                    : Disabled (tcp port 23 vr all)
                                  : Access Profile : not set
 SSH access                       : Enabled (Key valid, tcp port 22 vr all)
                                  : Secure-Mode    : Off

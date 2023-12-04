@@ -1,3 +1,7 @@
+Sunday, December 3, 2023 @ 09:21:15 PM
+- Added commands-file-v2.py -> it loops the send commands timing instead of using send config from file
+- Added a merge script for inventory
+---
 Sunday, December 3, 2023 @ 05:29:15 PM
 - Splitted commands from file and straight command to fix show configuration commands
 - Error logs now display full error messages

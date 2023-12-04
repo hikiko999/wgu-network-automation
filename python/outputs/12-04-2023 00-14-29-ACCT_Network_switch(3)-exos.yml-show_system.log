@@ -6,19 +6,19 @@ show switch
 SysName:          EXOS-VM
 SysLocation:      
 SysContact:       https://www.extremenetworks.com/support/
-System MAC:       0C:CC:78:5D:00:00
+System MAC:       0C:40:34:07:00:00
 System Type:      EXOS-VM
 
 SysHealth check:  Enabled
 Recovery Mode:    All
 System Watchdog:  Enabled
 
-Current Time:     Sun Dec  3 22:07:45 2023
+Current Time:     Mon Dec  4 00:14:38 2023
 Timezone:         [Auto DST Disabled] GMT Offset: 0 minutes, name is UTC.
-Boot Time:        Sun Dec  3 19:10:42 2023
+Boot Time:        Sun Dec  3 19:10:43 2023
 Boot Count:       0
 Next Reboot:      None scheduled
-System UpTime:    2 hours 57 minutes 2 seconds
+System UpTime:    5 hours 3 minutes 54 seconds
 
 Current State:    OPERATIONAL             
 Image Selected:   primary                 
@@ -33,7 +33,7 @@ Config Booted:    primary.cfg
 Config Automatic: NONE (Disabled)
 
 primary.cfg       Created by ExtremeXOS version 31.1.1.3
-                  211816 bytes saved on Sun Dec  3 06:05:49 2023
+                  211816 bytes saved on Sun Dec  3 06:05:59 2023
 
 
 LAA MAC:          Locally Administered MAC Address Disabled
@@ -68,7 +68,7 @@ show power
 PowerSupply 1 information:
  State             : Powered On
  PartInfo          : Internal PSU-2 SN:12345 PN:1N2039
- Odometer          : 2 hours 31 minutes 40 seconds since Dec-03-2023
+ Odometer          : 5 hours 1 minute 40 seconds since Dec-03-2023
  Temperature       : 30.1 deg C
  Input             : 120.00 V AC
 , 50.00 A
@@ -78,7 +78,7 @@ PowerSupply 1 information:
 PowerSupply 2 information:
  State             : Powered On
  PartInfo          : Internal PSU-3 SN:12345 PN:1N2039
- Odometer          : 2 hours 33 minutes 20 seconds since Dec-03-2023
+ Odometer          : 5 hours 3 minutes 20 seconds since Dec-03-2023
  Temperature       : 30.2 deg C
  Input             : 120.00 V AC
 , 50.00 A
@@ -97,7 +97,7 @@ Slot-1 FanTray information:
  NumFan:                 1
  PartInfo:               SN: 1234567 PN:1N2039-1
  Revision:               01
- Odometer:               2 hours 30 minutes 10 seconds since Dec-03-2023
+ Odometer:               5 hours 10 seconds since Dec-03-2023
  Temperature:            25.1 deg C
  Fan-1:                  Operational at 10001 RPM
 
@@ -112,13 +112,12 @@ mouse-usb             :                                        0  Jan-01-1970
 floppy-A              : 
 EXOS-VM.3 # show memory
 
-
 System Memory Information
 -------------------------
  Total DRAM (KB): 524288
  System     (KB): 31160
- User       (KB): 216176
- Free       (KB): 276952
+ User       (KB): 216688
+ Free       (KB): 276440
 
 Memory Utilization Statistics
 -----------------------------
@@ -126,28 +125,28 @@ Memory Utilization Statistics
 show switch management
  Process Name     Memory (KB)
 -----------------------------
- aaa              2664            
- acl              1551            
- bfd              1192            
- bgp              12212           
- brm              652             
- cfgmgr           2173            
- cli              37383           
- devmgr           1055            
- dirser           616             
- dnsAnalytics     1751            
- dosprotect       768             
- dot1ag           1303            
- eaps             1243            
- edgeAuto         821             
- edp              1711            
- elrp             1491            
- elsm             778             
- ems              4100            
- epm              2257            
- erps             1248            
- esrp             1049            
- etmon            1572            
+ aaa              2656            
+ acl              1566            
+ bfd              1197            
+ bgp              12125           
+ brm              654             
+ cfgmgr           2197            
+ cli              37562           
+ devmgr           1077            
+ dirser           611             
+ dnsAnalytics     1787            
+ dosprotect       762             
+ dot1ag           1299            
+ eaps             1302            
+ edgeAuto         835             
+ edp              1690            
+ elrp             1487            
+ elsm             789             
+ ems              4099            
+ epm              2251            
+ erps             1311            
+ esrp             1048            
+ etmon            1571            
  exacl            0               
  exdhcpsnoop      0               
  exdos            0               
@@ -157,57 +156,57 @@ show switch management
  exprocfs         0               
  exsflow          0               
  exsnoop          0               
- exsshd           1444            
+ exsshd           1452            
  exvlan           0               
- fdb              2482            
- hal              5369            
+ fdb              2528            
+ hal              5409            
  hclag            776             
- idMgr            3707            
- ipSecurity       959             
- iqagent          748             
- isis             1693            
- lacp             1426            
- licMgr           1422            
- lldp             2177            
- mcmgr            2690            
+ idMgr            3706            
+ ipSecurity       954             
+ iqagent          750             
+ isis             1711            
+ lacp             1414            
+ licMgr           1407            
+ lldp             2142            
+ mcmgr            2651            
  mpls             0               
- mrp              1664            
- msdp             1175            
- netDb            872             
- netLogin         2181            
- netTools         3037            
+ mrp              1659            
+ msdp             1173            
+ netDb            874             
+ netLogin         2199            
+ netTools         3154            
  nettx            0               
- nodealias        1715            
- nodemgr          614             
- ntp              1023            
- ospf             1785            
- ospfv3           6905            
- otm              998             
- pim              2535            
- poe              841             
- polMgr           598             
- policy           14912           
- pwmib            553             
- rip              1324            
- ripng            885             
- rtmgr            3274            
- snmpMaster       3998            
- snmpSubagent     7216            
- stp              2128            
- techSupport      917             
- telnetd          759             
- tftpd            404             
- throw            9542            
- thttpd           16411           
- twamp            580             
- upm              716             
- vlan             2863            
- vmt              1850            
- vpex             2256            
- vrrp             1122            
- vsm              1665            
- xmlc             1286            
- xmld             5080            
+ nodealias        1724            
+ nodemgr          611             
+ ntp              1018            
+ ospf             1808            
+ ospfv3           6914            
+ otm              989             
+ pim              2538            
+ poe              843             
+ polMgr           602             
+ policy           14914           
+ pwmib            551             
+ rip              1347            
+ ripng            892             
+ rtmgr            3326            
+ snmpMaster       3912            
+ snmpSubagent     7308            
+ stp              2086            
+ techSupport      918             
+ telnetd          772             
+ tftpd            408             
+ throw            9549            
+ thttpd           16449           
+ twamp            585             
+ upm              713             
+ vlan             2884            
+ vmt              1843            
+ vpex             2361            
+ vrrp             1170            
+ vsm              1661            
+ xmlc             1257            
+ xmld             5087            
 EXOS-VM.3 # show switch management
 
 CLI idle timeout                 : Enabled (20 minutes)
@@ -231,8 +230,8 @@ CLI history expansion            : Disabled
 Image integrity checking         : Off 
 Current system port notation     : port
 Configured system port notation  : port
-Telnet access                    : Disabledshow port configuration
- (tcp port 23 vr all)
+show port configuration no-refresh
+Telnet access                    : Disabled (tcp port 23 vr all)
                                  : Access Profile : not set
 SSH access                       : Enabled (Key valid, tcp port 22 vr all)
                                  : Secure-Mode    : Off
@@ -248,8 +247,8 @@ SNMP access                      : Enabled
                                  : Access Profile : not set
 SNMP Notifications               : Enabled
 SNMP Notification Receivers  : None
-SNMP stats:	InPkts 0       OutPkts   0       Errors 0       AuthErrors 0
+SNMP stats:	InPkts 2       OutPkts   0       Errors 0       AuthErrors 2
 		Gets   0       GetNexts  0       Sets   0       Drops      0       
 SNMP traps:	Sent   0       AuthTraps Enabled
 SNMP inform:	Sent   0       Retries   0       Failed 0
-EXOS-VM.3 # show port configuration
+EXOS-VM.3 # show port configuration no-refresh

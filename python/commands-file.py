@@ -31,7 +31,7 @@ def looper(inventory):
     seq_num = 0
     for i in inventory["devices"]:
         seq_num += 1
-        seq = f"{inventory['devices'][i]['host']}({seq_num})"
+        seq = f"{i}({seq_num})"
         try:
             print(f"Connecting to {i}|{inventory['devices'][i]['host']}")
             connect(inventory["devices"][i]["host"],
